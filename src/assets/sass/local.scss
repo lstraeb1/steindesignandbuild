@@ -518,7 +518,7 @@
         #stats-833 .cs-h3 {
             /* 16px - 20px */
             font-size: clamp(1rem, 2vw, 1.25rem);
-            font-family: "Roboto";
+            font-family: "Montserrat";
             font-weight: 400;
             line-height: 1.2em;
             text-align: left;
@@ -580,6 +580,141 @@
 }
 
 /*-- -------------------------- -->
+<---          Process           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #process-688 {
+        padding: var(--sectionPadding);
+        background-color: var(--primary);
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280/16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-topper {
+            color: var(--bodyTextColor);
+        }
+
+        .cs-title {
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-text {
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-card-group {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            column-gap: calc(20/16 * 1rem);
+            row-gap: calc(40/16 * 1rem);
+        }
+
+        .cs-item {
+            text-align: center;
+            list-style: none;
+            width: 100%;
+            max-width: calc(413/16 * 1rem);
+        }
+
+        .cs-picture {
+            width: calc(100/16 * 1rem);
+            height: calc(100/16 * 1rem);
+            margin: auto;
+            margin-bottom: calc(24/16 * 1rem);
+            background-color: #fdfaf8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-icon {
+            width: auto;
+            height: calc(44/16 * 1rem);
+            display: block;
+        }
+
+        .cs-h3 {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 3vw, 1.5625rem);
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: calc(12/16 * 1rem);
+            color: #fff;
+        }
+
+        .cs-item-text {
+            font-size: calc(16/16 * 1rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.02;
+            /* Makes img tag act as a background image */
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #process-688 {
+        .cs-card-group {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        .cs-item {
+            width: 48%;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #process-688 {
+        .cs-item {
+            width: clamp(23.45%, 22vw, 23.8%);
+        }
+    }
+}
+
+/*-- -------------------------- -->
 <---          Gallery           -->
 <--- -------------------------- -*/
 
@@ -592,6 +727,7 @@
         padding: var(--sectionPadding);
         /* Centers button */
         text-align: center;
+        background: var(--primary-background);
         .cs-container {
             margin: auto;
             max-width: calc(1322 / 16 * 1em);
@@ -607,6 +743,8 @@
             margin-bottom: calc(40 / 16 * 1rem);
             max-width: calc(621 / 16 * 1rem);
             text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .cs-image-group {
