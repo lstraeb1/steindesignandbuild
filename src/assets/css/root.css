@@ -5,8 +5,10 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #025B97;
+    --primary: #5fb8f4;
+    --button-primary: #025B97;
     --secondary: #3E6680;
+    --secondary-light: #F2F2F2;
     --primary-background: #191919;
     --alt-background: #0f0f0f;
     --bodyTextColor: #FFFFFF;
@@ -26,7 +28,7 @@
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     font-weight: 800;
-    color: var(--secondary);
+    color: var(--secondary-light);
     text-align: inherit;
   }
   .cs-title {
@@ -72,7 +74,7 @@
     content: "";
     width: 150%;
     height: 110%;
-    background: var(--primary);
+    background: var(--button-primary);
     opacity: 1;
     position: absolute;
     display: block;
@@ -721,6 +723,7 @@
   }
   #cs-navigation .cs-li-link.cs-drop-link:hover {
     color: var(--primary);
+    background-color: #272727;
   }
   #cs-navigation .cs-li-link.cs-drop-link:before {
     display: none;
@@ -1244,7 +1247,7 @@
   }
   #cs-footer-1783 .cs-picture {
     padding: 1rem;
-    background-color: var(--primary);
+    background-color: var(--button-primary);
     display: block;
   }
   #cs-footer-1783 .cs-icon {
