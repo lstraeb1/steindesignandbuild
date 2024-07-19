@@ -1,0 +1,102 @@
+---
+title: 'Page title for <title> and OG tags'
+description: 'Description for <meta> description and OG tags'
+preloadImg: '/assets/images/imagename.format'
+permalink: '/services/additions/'
+eleventyNavigation:
+    key: Name to appear in navigation
+    order: 3300
+    parent: Services
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/additions.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-1401">
+        <div class="cs-container">
+            <span class="cs-int-title">Additions Design & Construction</span>
+            <div class="cs-breadcrumbs">
+                <a href="" class="cs-link">Home</a>
+                <a href="" class="cs-link cs-active">Additions</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0894.JPG">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0894.JPG">
+            <img decoding="async" src="/assets/images/Exterior/IMG_0894.JPG" alt="people laughing" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <section id="content-page-1401">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <div class="cs-flex">
+                    <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0059.JPG">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0059.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0059.JPG" alt="people" width="542" height="728">
+                    </picture>
+                    <div class="cs-box">
+                        <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/awareness.svg" alt="people" width="60" height="60">
+                        <span class="cs-desc">
+                            We Have 15+ Years Of Experience
+                        </span>
+                    </div>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <h3 class="cs-h3">
+                            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/trophy.svg" alt="icon" width="32" height="32">
+                            Attention To Detail
+                        </h3>
+                        <p class="cs-item-text">
+                            There are many variations of but the majority is simply free suffered.
+                        </p>
+                    </li>
+                    <li class="cs-item">
+                        <h3 class="cs-h3">
+                            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/control-system.svg" alt="icon" width="32" height="32">
+                            Quality Work
+                        </h3>
+                        <p class="cs-item-text">
+                            There are many variations of but the majority is simply free suffered.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-content">
+                <h1 class="cs-title">Stein Design & Build: Expert Walkway Design in Syracuse, NY</h1>
+                <p>At Stein Design and Build, we specialize in crafting high-quality walkways that enhance the beauty and functionality of your outdoor space right here in Syracuse, NY. With over 15 years of experience in the local construction industry, our team is well-versed in creating walkways that meet the unique needs and styles of Syracuse homeowners and businesses.</p>
+                <h3>Why Choose Stein Design and Build for Your Walkway?</h3>
+                <p>What sets us apart from other contractors in Syracuse is our unwavering commitment to quality and customer satisfaction. We pride ourselves on our meticulous attention to detail and our effective communication with clients throughout every stage of the project. Our focus on high-end, high-quality work means we use only the best materials and techniques to achieve superior results.</p>
+                <p>Our work is backed by comprehensive warranties, giving you peace of mind that your investment is protected. With over 10,000 square feet of pavers installed and more than 30 five-star reviews from satisfied Syracuse clients, our track record speaks for itself. We are passionate about creating beautiful and functional walkways that enhance the value and appeal of your property in Syracuse.</p>
+                <h3>Our Walkway Services</h3>
+                <ol>
+                    <li><strong>Design and Planning:</strong> Collaborating with you to create a walkway that fits your vision and complements your property.</li>
+                    <li><strong>Material Selection:</strong> Offering a variety of materials such as natural stone, concrete pavers, and brick to match your style and needs.</li>
+                    <li><strong>Professional Installation:</strong> Ensuring precise and durable construction for long-lasting results.</li>
+                    <li><strong>Maintenance and Repairs:</strong> Providing regular upkeep and repair services to keep your walkway in top condition.</li>
+                </ol>
+                <h3>Get Started with Stein Design and Build Today</h2>
+                <p>If you're ready to enhance your outdoor space with a beautiful, functional walkway, Stein Design and Build is here to help. Our team of experienced professionals is dedicated to delivering top-quality workmanship and exceptional customer service from start to finish. We take the time to understand your needs and preferences, ensuring that your new walkway exceeds your expectations.</p>
+                <p>We offer free consultations and detailed estimates to help you plan your project with confidence. Whether you have a clear vision or need guidance in designing your perfect walkway, we're here to assist you every step of the way. Contact us today to schedule your consultation and take the first step toward transforming your property with a stunning new walkway crafted by Stein Design and Build in Syracuse, NY.</p>
+                <a href="contact/" class="cs-button-4">GET FREE ESTIMATE</a>
+            </div>
+        </div>
+    </section>
+    
+    {% endblock %}
