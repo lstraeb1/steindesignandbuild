@@ -23,6 +23,7 @@ function ariaExpanded() {
     }
 }
 
+
 // This script adds a class to the body after scrolling 100px
 // and we used these body.scroll styles to create some on scroll 
 // animations with the navbar
@@ -44,4 +45,4 @@ const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropd
     }
     item.addEventListener('click', onClick)
     }
-                            
+                                                                

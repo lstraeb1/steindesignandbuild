@@ -30,7 +30,7 @@
     </div>
     <div class="cs-container">
         <!--Nav Logo-->
-        <a href="" class="cs-logo" aria-label="back to home">
+        <a href="/" class="cs-logo" aria-label="back to home">
             <img src="/assets/images/logo-large.png" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
@@ -47,22 +47,22 @@
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
-                        <a href="/" class="cs-li-link cs-active">
+                        <a href="/" class="cs-li-link {% if page.url == '/' %} cs-active {% endif %}">
                             HOME
                         </a>
                     </li>
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <li class="cs-li cs-dropdown" tabindex="0">
-                        <span class="cs-li-link">
+                        <span class="cs-li-link {% if page.url.match('/services/') %} cs-active {% endif %}">
                             SERVICES
                             <img class="cs-drop-icon" src="/assets/svgs/arrow-down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                         </span>
                         <ul class="cs-drop-ul">
                             <li class="cs-drop-li">
-                                <a href="services/walkways/" class="cs-li-link cs-drop-link">WALKWAYS</a>
+                                <a href="/services/walkways" class="cs-li-link cs-drop-link {% if page.url == '/services/walkways/' %} cs-active {% endif %}">WALKWAYS</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">PATIOS</a>
+                                <a href="/services/patios" class="cs-li-link cs-drop-link {% if page.url == '/services/patios/' %} cs-active {% endif %}">PATIOS</a>
                             </li>
                             <li class="cs-drop-li">
                                 <a href="" class="cs-li-link cs-drop-link">ADDITIONS</a>
@@ -73,12 +73,12 @@
                         </ul>
                     </li>
                     <li class="cs-li">
-                        <a href="" class="cs-li-link">
+                        <a href="/about" class="cs-li-link {% if page.url == '/about/' %} cs-active {% endif %}">
                             ABOUT
                         </a>
                     </li>
                     <li class="cs-li">
-                        <a href="" class="cs-li-link">
+                        <a href="/gallery" class="cs-li-link {% if page.url == '/gallery/' %} cs-active {% endif %}">
                             GALLERY
                         </a>
                     </li>

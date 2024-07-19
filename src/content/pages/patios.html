@@ -1,35 +1,21 @@
 ---
-title: 'Walkways In Syracuse, NY| Stein Design and Build'
+title: 'Project Two | Code Stitch Web Designs'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
-permalink: '/services/walkways/'
+permalink: '/services/patios'
 eleventyNavigation:
-    key: Walkways
-    order: 3100
+    key: Patios
+    order: 3200
     parent: Services
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/walkways.css">
+    <link rel="stylesheet" href="/assets/css/patios.css">
 {% endblock %}
 
 {% block body %}
-
-    <!-- ============================================ -->
-    <!--                 Content Page                 -->
-    <!-- ============================================ -->
-
-    <!-- ============================================ 
-        This Stitch is used for content heavy interior pages
-        that have no design or layout.  Often times these are 
-        content silos where you talk extensively about a topic
-        to educate your visitors and rank on Google for the 
-        content.  These are great for pages that have a TON
-        of content.  Design isn't important here, it's all 
-        about making the content accessible and easy to read.
-    ================================================= -->
 
     <!-- ============================================ -->
     <!--                   Banner                     -->
@@ -37,10 +23,10 @@ eleventyNavigation:
 
     <div id="banner-1401">
         <div class="cs-container">
-            <span class="cs-int-title">Walkway Design & Construction</span>
+            <span class="cs-int-title">Patio Design & Construction</span>
             <div class="cs-breadcrumbs">
                 <a href="" class="cs-link">Home</a>
-                <a href="" class="cs-link cs-active">Walkways</a>
+                <a href="" class="cs-link cs-active">Patios</a>
             </div>
         </div>
         <!--Background Image-->
@@ -112,5 +98,7 @@ eleventyNavigation:
             </div>
         </div>
     </section>
+
+    {% include 'components/cta.html' %}
 
 {% endblock %}
