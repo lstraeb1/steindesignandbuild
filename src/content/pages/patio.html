@@ -1,19 +1,21 @@
 ---
-title: 'Project Two | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: '/services/patios'
+title: 'Page title for <title> and OG tags'
+description: 'Description for <meta> description and OG tags'
+preloadImg: '/assets/images/imagename.format'
+permalink: '/services/patio/'
 eleventyNavigation:
-    key: Patios
+    key: Patio
     order: 3200
     parent: Services
+    hideOnMobile: Optional - set to "true" to hide on devices from, and below, 1023px
+    hideOnDesktop: Optional - set to "true" to hide on devices above, and including, 1024px
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/patios.css">
-{% endblock %} 
+    <link rel="stylesheet" href="/assets/css/additions.css">
+{% endblock %}
 
 {% block body %}
 
@@ -23,7 +25,7 @@ eleventyNavigation:
 
     <div id="banner-1401">
         <div class="cs-container">
-            <span class="cs-int-title">Patio Design & Construction</span>
+            <span class="cs-int-title">Patio Contractors</span>
             <div class="cs-breadcrumbs">
                 <a href="" class="cs-link">Home</a>
                 <a href="" class="cs-link cs-active">Patios</a>
@@ -35,7 +37,7 @@ eleventyNavigation:
             <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0894.JPG">
             <!--Tablet and above Image-->
             <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0894.JPG">
-            <img decoding="async" src="/assets/images/Exterior/IMG_0894.JPG" alt="people laughing" width="1280" height="568" aria-hidden="true">
+            <img decoding="async" src="/assets/images/Exterior/IMG_0894.JPG" alt="back patio" width="1280" height="568" aria-hidden="true">
         </picture>
     </div>
 
@@ -45,13 +47,13 @@ eleventyNavigation:
                 <div class="cs-flex">
                     <picture class="cs-background">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0059.JPG">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0191.JPG">
                         <!--Tablet and above Image-->
-                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0059.JPG">
-                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0059.JPG" alt="people" width="542" height="728">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0191.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0191.JPG" alt="back patio" width="542" height="728">
                     </picture>
                     <div class="cs-box">
-                        <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/awareness.svg" alt="people" width="60" height="60">
+                        <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/awareness.svg" alt="icon" width="60" height="60">
                         <span class="cs-desc">
                             We Have 15+ Years Of Experience
                         </span>
@@ -70,7 +72,7 @@ eleventyNavigation:
                     <li class="cs-item">
                         <h3 class="cs-h3">
                             <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/control-system.svg" alt="icon" width="32" height="32">
-                            Quality Work
+                            High Quality Work
                         </h3>
                         <p class="cs-item-text">
                             There are many variations of but the majority is simply free suffered.
@@ -79,7 +81,7 @@ eleventyNavigation:
                 </ul>
             </div>
             <div class="cs-content">
-                <h1 class="cs-title">Stein Design & Build: Expert Patio Design in Syracuse, NY</h1>
+                <h1 class="cs-title">Stein Design & Build: Expert Patio Contracting in Syracuse, NY</h1>
                 <p>At Stein Design and Build, we specialize in creating exquisite patios that enhance the outdoor living experience for homeowners in Syracuse, NY. With over 15 years of experience in the construction industry, our team is dedicated to crafting patios that reflect your unique style and meet the specific needs of your property.</p>
                 <h3>Why Choose Stein Design and Build for Your Patio?</h3>
                 <p>Stein Design and Build stands out among contractors in Syracuse due to our unwavering dedication to quality craftsmanship and customer satisfaction. Our commitment to excellence is evident in every project we undertake, and we prioritize clear communication with our clients throughout the entire process. By focusing on high-end, high-quality projects, we ensure that every patio we build is both functional and visually stunning.</p>
@@ -97,9 +99,7 @@ eleventyNavigation:
                 <p>We offer free consultations and detailed estimates to help you plan your project with confidence. Whether you have a clear vision or need guidance in designing your perfect patio, we're here to assist you every step of the way. Contact us today to schedule your consultation and take the first step toward creating your dream patio with Stein Design and Build in Syracuse, NY.</p>
                 <a href="contact/" class="cs-button-4">GET FREE ESTIMATE</a>
             </div>
-        </div>
+        </div>        
     </section>
-
-    {% include 'components/cta.html' %}
-
-{% endblock %}
+  
+  {% endblock %}

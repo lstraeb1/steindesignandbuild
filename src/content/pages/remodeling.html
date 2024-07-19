@@ -1,0 +1,106 @@
+---
+title: 'Page title for <title> and OG tags'
+description: 'Description for <meta> description and OG tags'
+preloadImg: '/assets/images/imagename.format'
+permalink: '/services/remodeling/'
+eleventyNavigation:
+    key: Interior Remodeling
+    order: 3400
+    parent: Services
+    hideOnMobile: Optional - set to "true" to hide on devices from, and below, 1023px
+    hideOnDesktop: Optional - set to "true" to hide on devices above, and including, 1024px
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/additions.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-1401">
+        <div class="cs-container">
+            <span class="cs-int-title">Interior Remodeling Contractor</span>
+            <div class="cs-breadcrumbs">
+                <a href="" class="cs-link">Home</a>
+                <a href="" class="cs-link cs-active">Interior Remodeling</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0894.JPG">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0894.JPG">
+            <img decoding="async" src="/assets/images/Exterior/IMG_0894.JPG" alt="stone patio" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <section id="content-page-1401">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <div class="cs-flex">
+                    <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/Interior/Rental-Shower.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/Interior/Rental-Shower.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Interior/Rental-Shower.jpg" alt="tile shower" width="542" height="728">
+                    </picture>
+                    <div class="cs-box">
+                        <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/awareness.svg" alt="icon" width="60" height="60">
+                        <span class="cs-desc">
+                            We Have 15+ Years Of Experience
+                        </span>
+                    </div>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <h3 class="cs-h3">
+                            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/trophy.svg" alt="icon" width="32" height="32">
+                            Attention To Detail
+                        </h3>
+                        <p class="cs-item-text">
+                            Our commitment to precision ensures that every aspect of your interior remodel is executed flawlessly, enhancing both style and functionality.
+                        </p>
+                    </li>
+                    <li class="cs-item">
+                        <h3 class="cs-h3">
+                            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/control-system.svg" alt="icon" width="32" height="32">
+                            Quality Work & Services
+                        </h3>
+                        <p class="cs-item-text">
+                            We use only the highest quality materials and skilled craftsmanship to deliver interior remodeling projects that stand the test of time.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-content">
+                <h1 class="cs-title">Stein Design & Build: Expert Interior Remodeling in Syracuse, NY</h1>
+                <p>At Stein Design and Build, we are experts in transforming your indoor spaces into beautifully designed and functional areas. Serving Syracuse, NY, for over 15 years, our team is dedicated to delivering top-notch interior remodeling services that meet your specific needs and style preferences.</p>
+                <h3>Why Choose Stein Design and Build for Your Interior Remodeling?</h3>
+                <p>Our reputation for excellence in interior remodeling is built on a foundation of attention to detail and superior craftsmanship. We prioritize clear communication with our clients to ensure that every aspect of the project aligns with your vision. By focusing on high-end, high-quality work, we guarantee that your remodeled interior will not only look stunning but also enhance your everyday living experience.</p>
+                <p>We stand behind our work with comprehensive warranties, providing peace of mind and confidence in your investment. With over 10,000 square feet of pavers installed and more than 30 five-star reviews from satisfied clients, our proven track record speaks volumes. We are passionate about creating interiors that reflect your personal style and enhance the functionality of your home.</p>
+                <h3>Our Interior Remodeling Services</h3>
+                <ul>
+                    <li><strong>Kitchen Remodeling:</strong> Transform your kitchen into a modern, functional space with custom cabinetry, countertops, and appliances.</li>
+                    <li><strong>Bathroom Remodeling:</strong> Update your bathroom with elegant fixtures, stylish tiles, and luxurious amenities for a spa-like experience.</li>
+                    <li><strong>Bedroom Renovations:</strong> Create a relaxing retreat with custom storage solutions, updated flooring, and fresh design elements.</li>
+                    <li><strong>Living Room Upgrades:</strong> Enhance your living space with new flooring, custom built-ins, and contemporary design touches.</li>
+                    <li><strong>Basement Finishing:</strong> Turn your basement into a usable and attractive area, whether for a home theater, gym, or additional living space.</li>
+                    <li><strong>Home Office Remodeling:</strong> Design a productive workspace with efficient layouts, ergonomic furniture, and personalized design features.</li>
+                </ul>
+                <h3>Get Started with Stein Design and Build Today</h3>
+                <p>If you're ready to revitalize your home with a stunning interior remodel, Stein Design and Build is here to help. Our experienced team is dedicated to delivering exceptional workmanship and outstanding customer service throughout every stage of your project. We work closely with you to ensure that your interior remodel exceeds your expectations.</p>
+                <p>We offer free consultations and detailed estimates to help you plan your remodeling project with confidence. Whether you have a clear vision or need guidance in designing your perfect interior, we’re here to assist you every step of the way. Contact us today to schedule your consultation and start the journey towards transforming your home with an elegant and functional interior remodel crafted by Stein Design and Build in Syracuse, NY.</p>
+                <a href="contact/" class="cs-button-4">GET FREE ESTIMATE</a>
+            </div>
+        </div>    
+    </section>
+  
+  {% endblock %}

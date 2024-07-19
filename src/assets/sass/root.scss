@@ -452,7 +452,7 @@
             width: calc(46/16 * 1rem);
             height: calc(46/16 * 1rem);
             margin: 0 0 0 auto;
-            background-color: var(--primary);
+            background-color: var(--button-primary);
             border: none;
             display: flex;
             justify-content: center;
@@ -700,7 +700,7 @@
             margin: 0;
             box-sizing: border-box;
             padding: 0 calc(24/16 * 1rem) 0 calc(24/16 * 1rem);
-            background-color: var(--primary);
+            background-color: var(--button-primary);
             opacity: 0;
             display: flex;
             visibility: hidden;
