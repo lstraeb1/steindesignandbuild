@@ -1,0 +1,583 @@
+---
+title: 'Page title for <title> and OG tags'
+description: 'Description for <meta> description and OG tags'
+preloadImg: '/assets/images/imagename.format'
+permalink: '/portfolio/'
+eleventyNavigation:
+    key: Name to appear in navigation
+    order: 1000
+    parent: Optional - Put another page's "key" here to create a dropdown
+    hideOnMobile: Optional - set to "true" to hide on devices from, and below, 1023px
+    hideOnDesktop: Optional - set to "true" to hide on devices above, and including, 1024px
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
+    <script defer src="/assets/js/portfolio.js"></script>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-1401">
+        <div class="cs-container">
+            <span class="cs-int-title">Portfolio</span>
+            <div class="cs-breadcrumbs">
+                <a href="" class="cs-link">Home</a>
+                <a href="" class="cs-link cs-active">Portfolio</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0274.JPG">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0274.JPG">
+            <img decoding="async" src="/assets/images/Exterior/IMG_0274.JPG" alt="stone patio" width="1920" height="782" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <!--
+        To add a 5th or 6th gallery or more, copy and paste the cs-button and change it's data-filter to th next number, in this case it's 5. Do the dame to the cs-gallery and its data-category number. And thats it!
+    -->
+
+    <section id="gallery-1449">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">PORTFOLIO</span>
+                    <h2 class="cs-title">Explore Our Portfolio of Stunning Projects</h2>
+                </div>
+                <div class="cs-button-group">
+                    <button class="cs-button" data-filter="one">
+                        Walkways
+                    </button>
+                    <button class="cs-button" data-filter="two">
+                        Patios
+                    </button>
+                    <button class="cs-button" data-filter="three">
+                        Interior Remodeling
+                    </button>
+                </div>
+            </div>
+            <div class="cs-gallery-wrapper">
+                <!--Gallery 1-->
+                <div class="cs-gallery" data-category="one">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_2120.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_2120.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_2120.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_2119.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_2119.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_2119.JPG" alt="stone walkways" width="700" height="933">
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1724.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1724.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1724.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1723.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1723.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1723.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1695.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1695.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1695.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 6-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1694.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1694.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1694.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 7-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1627.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1627.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1627.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 8-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1626.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1626.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1626.JPG" alt="stone walkway" width="700" height="933">
+                    </picture>
+                    <!--Picture 9-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1604.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1604.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1604.JPG" alt="stone walkway" width="700" height="933">
+                    </picture>
+                    <!--Picture 10-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1601.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1601.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1601.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 11-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1600.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1600.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1600.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 12-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1571.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1571.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1571.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 13-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0682.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0682.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0682.JPG" alt="stone walkway" width="700" height="460">
+                    </picture>
+                    <!--Picture 14-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0665.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0665.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0665.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 15-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0664.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0664.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0664.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 16-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0298.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0298.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0298.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 17-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0296.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0296.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0296.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 18-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0273.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0273.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0273.JPG" alt="stone walkway" width="680" height="410">
+                    </picture>
+                    <!--Picture 19-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0272.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0272.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0272.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 20-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0271.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0271.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0271.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 21-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0110.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0110.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0110.JPG" alt="stone walkway" width="700" height="933">
+                    </picture>
+                    <!--Picture 22-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0109.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0109.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0109.JPG" alt="stone walkway" width="700" height="933">
+                    </picture>
+                    <!--Picture 23-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0062.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0062.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0062.JPG" alt="stone walkway" width="700" height="933">
+                    </picture>
+                    <!--Picture 22-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0060.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0060.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0060.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                    <!--Picture 23-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0059.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0059.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0059.JPG" alt="stone walkway" width="1000" height="1333">
+                    </picture>
+                    <!--Picture 24-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0046.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0046.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0046.JPG" alt="stone walkway" width="700" height="933">
+                    </picture>
+                    <!--Picture 24-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0026.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0026.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0026.JPG" alt="stone walkway" width="700" height="933">
+                    </picture>
+                    <!--Picture 25-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/13.JPG">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/13.JPG">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/13.JPG" alt="stone walkway" width="700" height="525">
+                    </picture>
+                </div>
+                <!--Gallery 2-->
+                <div class="cs-gallery cs-hidden" data-category="two">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/Miller-Project-portfolio.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/Miller-Project-portfolio.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/Miller-Project-portfolio.jpg" alt="stone patio" width="1130" height="880">
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_2961.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_2961.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_2961.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1661.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1661.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1661.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1660.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1660.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1660.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1657.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1657.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1657.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 6-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1605.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1605.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1605.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 7-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1594.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1594.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1594.jpg" alt="stone patio" width="600" height="450">
+                    </picture>
+                    <!--Picture 8-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1593.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1593.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1593.jpg" alt="stone patio" width="860" height="645">
+                    </picture>
+                    <!--Picture 9-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1460.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1460.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1460.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 10-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1172.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1172.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_1172.jpg" alt="stone patio" width="600" height="800">
+                    </picture>
+                    <!--Picture 11-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0896.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0896.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0896.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 12-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0894.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0894.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0894.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 13-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0892.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0892.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0892.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 14-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0890.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0890.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0890.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 15-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0894.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0894.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0894.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 16-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0571.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0571.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0571.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 17-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0570.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0570.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0570.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 18-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0510.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0510.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0510.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 19-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0506.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0506.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0506.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 20-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0484.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0484.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0484.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 21-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0483.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0483.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0483.jpg" alt="stone patio" width="600" height="450">
+                    </picture>
+                    <!--Picture 22-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0466.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0466.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0466.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 23-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0464.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0464.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0464.jpg" alt="stone patio" width="600" height="800">
+                    </picture>
+                    <!--Picture 24-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0462.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0462.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0462.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 25-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0460.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0460.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0460.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 26-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0428.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0428.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0428.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 27-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0281.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0281.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0281.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 28-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0280.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0280.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0280.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 29-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0191.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0191.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0191.jpg" alt="stone patio" width="1000" height="1333">
+                    </picture>
+                    <!--Picture 30-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0181.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0181.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0181.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 31-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0124.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0124.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0124.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 32-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0123.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0123.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0123.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 33-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0043.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0043.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0043.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 33-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0042.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0042.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0042.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 34-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0035.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0035.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0035.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 35-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0028.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0028.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0028.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 36-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0027.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0027.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0027.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                    <!--Picture 37-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0015.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0015.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Exterior/IMG_0015.jpg" alt="stone patio" width="700" height="525">
+                    </picture>
+                </div>
+                <!--Gallery 3-->
+                <div class="cs-gallery cs-hidden" data-category="three">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 6-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 7-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 8-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                </div>
+                <!--Gallery 4-->
+                <div class="cs-gallery cs-hidden" data-category="four">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 6-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 7-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 8-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                </div>
+            </div>
+            <a href="contact/" class="cs-button-4">GET A FREE ESTIMATE</a>
+        </div>
+    </section>
+    
+    {% include 'components/cta.html' %}
+{% endblock %}
