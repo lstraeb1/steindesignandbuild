@@ -14,7 +14,6 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/faq.css">
-    <script defer src="/assets/js/faq.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -126,5 +125,14 @@ eleventyNavigation:
         </div>
     </section>
                                 
+    <script>
+        const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+    </script>
 
     {% endblock %}

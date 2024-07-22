@@ -508,7 +508,7 @@
   }
 }
 /*-- -------------------------- -->
-<---          Process           -->
+<---          Why Choose        -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -567,7 +567,7 @@
     height: 6.25rem;
     margin: auto;
     margin-bottom: 1.5rem;
-    background-color: #fdfaf8;
+    background-color: var(--primary-background);
     display: flex;
     justify-content: center;
     align-items: center;

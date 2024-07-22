@@ -1,9 +1,7 @@
 ---
 title: 'Expert Contracting Services | Stein Design and Build | Syracuse, NY'
 description: 'Stein Design and Build is the premier general contracting company in Syracuse, NY. Specializing in custom home additions, walkways, patios, and more, we bring over 15 years of experience to every project. Transform your space with our expert craftsmanship and high-quality designs.'
-preloadImg:
-    - '/assets/images/Exterior/Miller-Project-1.jpg'
-    - '/assets/images/logo-large.png'
+preloadImg: '/assets/images/Exterior/Miller-Project-1.jpg'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -16,24 +14,6 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
 {% endblock %}
 
 {% block body %}
@@ -82,7 +62,7 @@ eleventyNavigation:
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <a href="/services/walkways" class="cs-link">
                         <picture class="cs-picture">
                             <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0273.JPG">
                             <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0273.JPG">
@@ -95,7 +75,7 @@ eleventyNavigation:
                     </a>
                 </li>
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <a href="/services/patio" class="cs-link">
                         <picture class="cs-picture">
                             <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0015.JPG">
                             <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0015.JPG">
@@ -108,7 +88,7 @@ eleventyNavigation:
                     </a>
                 </li>
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <a href="/services/additions" class="cs-link">
                         <picture class="cs-picture">
                             <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_1701.JPG">
                             <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_1701.JPG">
@@ -121,7 +101,7 @@ eleventyNavigation:
                     </a>
                 </li>
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <a href="/services/remodeling" class="cs-link">
                         <picture class="cs-picture">
                             <source media="(max-width: 600px)" srcset="/assets/images/Interior/Ad-5-backsplash.jpg">
                             <source media="(min-width: 601px)" srcset="/assets/images/Interior/Ad-5-backsplash.jpg">
@@ -171,10 +151,10 @@ eleventyNavigation:
                 <span class="cs-topper">FEATURED SERVICE</span>
                 <h2 class="cs-title">Create Your Perfect Outdoor Retreat With A Beautiful Patio</h2>
                 <p class="cs-text">
-                    Transform your backyard into a beautiful, functional living space with our custom patio solutions. Whether you want a cozy area for family gatherings or a stylish spot for entertaining guests, our expert team designs and builds patios to meet your unique needs and preferences.
+                    Transform your backyard into a beautiful, functional living space with our custom patio solutions. Whether you want a cozy area for family gatherings or a stylish spot for entertaining guests, our expert team designs and builds patios to meet your unique needs and preferences. Our attention to detail and commitment to excellence ensure that each patio we create is both stunning and practical, offering a perfect blend of comfort and sophistication.
                 </p>
                 <p class="cs-text">
-                    Using top-quality materials and innovative designs, we craft patios that not only enhance the aesthetic appeal of your home but also provide a durable and enjoyable outdoor space. Trust Stein Design and Build to deliver exceptional craftsmanship and create the perfect patio for your lifestyle in Syracuse, NY.
+                    Using top-quality materials and innovative designs, we craft patios that not only enhance the aesthetic appeal of your home but also provide a durable and enjoyable outdoor space. Our team works closely with you from conception to completion, ensuring your vision is realized while adhering to the highest standards of construction and design. Trust Stein Design and Build to deliver exceptional craftsmanship and create the perfect patio for your lifestyle in Syracuse, NY.
                 </p>
                 <a href="contact/" class="cs-button-4">GET AN ESTIMATE</a>
             </div>
@@ -262,14 +242,14 @@ eleventyNavigation:
                         <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/search.svg" alt="magnifying glass icon" width="42" height="42">
                     </picture>
                     <h3 class="cs-h3">Attention to Detail</h3>
-                    <p class="cs-item-text">We ensure every remodeling project is executed with precision and meticulous attention to detail, guaranteeing top-notch results that exceed your expectations.</p>
+                    <p class="cs-item-text">We ensure every project is executed with precision and meticulous attention to detail, guaranteeing top-notch results that exceed your expectations.</p>
                 </li>
                 <li class="cs-item">
                     <picture class="cs-picture">
                         <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/service.svg" alt="ribbon icon" width="42" height="42">
                     </picture>
                     <h3 class="cs-h3">Quality Assurance</h3>
-                    <p class="cs-item-text">We stand behind our remodeling work with comprehensive warranties, ensuring your investment is protected and built to last.</p>
+                    <p class="cs-item-text">We stand behind our work with comprehensive warranties, ensuring your investment is protected and built to last.</p>
                 </li>
                 <li class="cs-item">
                     <picture class="cs-picture">
@@ -351,7 +331,7 @@ eleventyNavigation:
                     </picture>
                 </div>
             </div>
-            <a href="projects/" class="cs-button-4">VIEW ALL</a>
+            <a href="portfolio/" class="cs-button-4">VIEW ALL</a>
         </div>
     </section>
 
@@ -375,7 +355,7 @@ eleventyNavigation:
                     your new space integrates perfectly with your current home. With our commitment to quality craftsmanship and attention to detail, you can trust us to bring your 
                     vision to life. Contact us today to explore the possibilities and experience the benefits of a beautifully expanded home in Syracuse.
                 </p>
-                <a href="" class="cs-button-4">GET FREE ESTIMATE</a>
+                <a href="/contact" class="cs-button-4">GET FREE ESTIMATE</a>
             </div>
             <div class="cs-image-group">
                 <picture class="cs-picture">
@@ -414,7 +394,7 @@ eleventyNavigation:
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <div class="cs-link">
                         <picture class="cs-picture">
                             <img class="cs-icon" src="/assets/svgs/brick-wall.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                         </picture>
@@ -422,10 +402,10 @@ eleventyNavigation:
                         <p class="cs-item-text">
                             Build durable and visually appealing retaining walls to manage soil erosion and enhance landscape design.
                         </p>
-                    </a>
+                    </div>
                 </li>
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <div class="cs-link">
                         <picture class="cs-picture">
                             <img class="cs-icon" src="/assets/svgs/firepit.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                         </picture>
@@ -433,10 +413,10 @@ eleventyNavigation:
                         <p class="cs-item-text">
                             Create a perfect outdoor entertaining area with custom kitchens and cozy firepits for year-round enjoyment.
                         </p>
-                    </a>
+                    </div>
                 </li>
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <div class="cs-link">
                         <picture class="cs-picture">
                             <img class="cs-icon" src="/assets/svgs/stairs.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                         </picture>
@@ -444,10 +424,10 @@ eleventyNavigation:
                         <p class="cs-item-text">
                             Design and install stylish and functional staircases that complement the design of your home and ensure safety.
                         </p>
-                    </a>
+                    </div>
                 </li>
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <div class="cs-link">
                         <picture class="cs-picture">
                             <img class="cs-icon" src="/assets/svgs/gazebo.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                         </picture>
@@ -455,10 +435,10 @@ eleventyNavigation:
                         <p class="cs-item-text">
                             Add elegance and shade to your outdoor spaces with beautifully crafted pergolas and gazebos.
                         </p>
-                    </a>
+                    </div>
                 </li>
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <div class="cs-link">
                         <picture class="cs-picture">
                             <img class="cs-icon" src="/assets/svgs/lamp.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                         </picture>
@@ -466,10 +446,10 @@ eleventyNavigation:
                         <p class="cs-item-text">
                             Upgrade your driveway with durable materials and enhance your outdoor spaces with strategically placed lighting.
                         </p>
-                    </a>
+                    </div>
                 </li>
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <div class="cs-link">
                         <picture class="cs-picture">
                             <img class="cs-icon" src="/assets/svgs/bath.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                         </picture>
@@ -477,10 +457,10 @@ eleventyNavigation:
                         <p class="cs-item-text">
                             Refresh your home with expert bathroom and kitchen remodeling that combines style, functionality, and modern conveniences.
                         </p>
-                    </a>
+                    </div>
                 </li>
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <div class="cs-link">
                         <picture class="cs-picture">
                             <img class="cs-icon" src="/assets/svgs/house.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                         </picture>
@@ -488,10 +468,10 @@ eleventyNavigation:
                         <p class="cs-item-text">
                             Transform your basement into a versatile and inviting living area, perfect for a variety of uses from entertainment to additional living space.
                         </p>
-                    </a>
+                    </div>
                 </li>
                 <li class="cs-item">
-                    <a href="" class="cs-link">
+                    <div class="cs-link">
                         <picture class="cs-picture">
                             <img class="cs-icon" src="/assets/svgs/door.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                         </picture>
@@ -499,7 +479,7 @@ eleventyNavigation:
                         <p class="cs-item-text">
                             Improve your home's energy efficiency and curb appeal with high-quality windows and doors tailored to your aesthetic and functional needs.
                         </p>
-                    </a>
+                    </div>
                 </li>
             </ul>
             <a href="contact/" class="cs-button-4">CONTACT US</a>
