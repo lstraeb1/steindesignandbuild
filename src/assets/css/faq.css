@@ -131,108 +131,194 @@
   }
 }
 /*-- -------------------------- -->
-<---          Reviews           -->
+<---            FAQ             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #reviews-355 {
+  #faq-1466 {
     padding: var(--sectionPadding);
     background: var(--alt-background);
+    position: relative;
+    overflow: hidden;
   }
-  #reviews-355 .cs-container {
+  #faq-1466 .cs-container {
     width: 100%;
-    max-width: 90rem;
+    /* chnages to 1280px at desktop */
+    max-width: 39.375rem;
     margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    /* 48px - 108px */
+    gap: clamp(3rem, 8vw, 6.75rem);
   }
-  #reviews-355 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
+  #faq-1466 .cs-content {
+    text-align: left;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
+    max-width: 39.375rem;
   }
-  #reviews-355 .cs-card-group {
+  #faq-1466 .cs-title {
+    margin: 0 0 2rem;
+    /* 20 characters wide including spaces */
+    max-width: 20ch;
+  }
+  #faq-1466 .cs-faq-group {
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* 16px - 20px */
-    gap: clamp(1rem, 2.5vw, 1.15rem);
+    align-self: center;
   }
-  #reviews-355 .cs-item {
+  #faq-1466 .cs-faq-item {
     list-style: none;
     width: 100%;
-    max-width: 39.375rem;
-    margin: 0;
-    /* 24px - 32px top & bottom */
-    /* 16px - 40px left & right */
-    padding: clamp(1.5rem, 3.15vw, 2rem) clamp(1rem, 3.15vw, 2.5rem);
-    background-color: var(--primary-background);
-    /* prevents padding from adding to height and width */
+    /* 20px - 24px */
+    padding: clamp(1.25rem, 2vw, 1.5rem) 0;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+    transition: border-bottom 0.3s;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  #faq-1466 .cs-faq-item.active {
+    border-color: var(--primaryLight);
+  }
+  #faq-1466 .cs-faq-item.active .cs-button {
+    color: var(--primary);
+  }
+  #faq-1466 .cs-faq-item.active .cs-button:before {
+    background-color: var(--primary);
+    transform: rotate(315deg);
+  }
+  #faq-1466 .cs-faq-item.active .cs-button:after {
+    background-color: var(--primary);
+    transform: rotate(-315deg);
+  }
+  #faq-1466 .cs-faq-item.active .cs-item-p, #faq-1466 .cs-faq-item.active .cs-item-ul {
+    height: auto;
+    padding-top: 1rem;
+    opacity: 1;
+  }
+  #faq-1466 .cs-button {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: bold;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #d4d4d4;
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #faq-1466 .cs-button:hover {
+    cursor: pointer;
+  }
+  #faq-1466 .cs-button:before {
+    /* left line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--bodyTextColor);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 45%;
+    right: 0.25rem;
+    transform: rotate(45deg);
+    /* animate the transform from the left side of the x axis, and the center of the y */
+    transform-origin: left center;
+    transition: transform 0.5s;
+  }
+  #faq-1466 .cs-button:after {
+    /* right line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--bodyTextColor);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 45%;
+    right: 0.0625rem;
+    transform: rotate(-45deg);
+    /* animate the transform from the right side of the x axis, and the center of the y */
+    transform-origin: right center;
+    transition: transform 0.5s;
+  }
+  #faq-1466 .cs-button-text {
+    width: 90%;
+    display: block;
+  }
+  #faq-1466 .cs-item-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    width: 90%;
+    max-width: 33.8125rem;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    color: var(--bodyTextColor);
+    /* clips the text so it doesn't show up */
+    overflow: hidden;
+    transition: opacity 0.3s, padding-bottom 0.3s;
+  }
+  #faq-1466 .cs-item-ul {
+    margin-top: 1rem;
+    list-style: none;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s, padding-bottom 0.3s;
+  }
+  #faq-1466 .cs-item-ul li {
+    color: var(--bodyTextColor);
+  }
+  #faq-1466 .cs-picture {
+    width: 100%;
+    /* 300px - 498px */
+    height: clamp(18.75rem, 65vw, 31.125rem);
+    display: block;
     position: relative;
   }
-  #reviews-355 .cs-quote {
-    width: 2.5rem;
-    height: auto;
-    margin-bottom: 2rem;
-    display: block;
-  }
-  #reviews-355 .cs-review {
-    /* 14px - 20px */
-    font-size: var(bodyFontSize);
-    line-height: 1.5em;
-    margin: 0;
-    /* 20px - 40px */
-    margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
-    color: var(--bodyTextColor);
-  }
-  #reviews-355 .cs-name {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 3vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
-    margin-top: auto;
-    color: var(--primary);
-    display: block;
-  }
-  #reviews-355 .cs-trait {
-    /* 14px - 16px */
-    font-size: clamp(1.5rem, 2vw, 1.5rem);
-    line-height: 1.5em;
-    margin-bottom: clamp(0.75rem, 1.75vw, 1.5rem);
-    color: var(--bodyTextColor);
-    font-family: "Rokkitt";
-    font-weight: 800;
-    display: block;
+  #faq-1466 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #reviews-355 .cs-card-group {
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #faq-1466 .cs-container {
+    max-width: 80rem;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: stretch;
-    flex-wrap: wrap;
   }
-  #reviews-355 .cs-item {
-    width: clamp(31.5%, 30vw, 32.3%);
+  #faq-1466 .cs-content {
+    width: 45vw;
+    /* prevents flexbox from squsihing it */
+    flex: none;
+    align-self: center;
+  }
+  #faq-1466 .cs-picture {
+    height: auto;
+    min-height: 42.375rem;
+    order: 1;
   }
 }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=faq.css.map */

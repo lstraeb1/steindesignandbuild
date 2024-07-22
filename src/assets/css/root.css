@@ -1356,7 +1356,7 @@
     transition: color 0.3s;
   }
   #cs-footer-1783 .cs-link:hover {
-    color: var(--primaryLight);
+    color: var(--primary);
   }
   #cs-footer-1783 .cs-bottom {
     width: 100%;

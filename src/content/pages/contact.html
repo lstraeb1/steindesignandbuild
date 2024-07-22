@@ -1,11 +1,13 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'Contact | Stein Design and Build'
+description: 'Contact Stein Design and Build in Syracuse, NY, for all your construction and remodeling needs. Get in touch with our expert team to discuss your project and request a free estimate today.'
+preloadImg: 
+    - '/assets/images/Exterior/IMG_0274.JPG'
+    - '/assets/images/Exterior/IMG_0042.JPG'
 permalink: 'contact/'
 eleventyNavigation:
     key: Contact Us
-    order: 600
+    order: 500
     hideOnDesktop: true
 ---
 
@@ -18,82 +20,70 @@ eleventyNavigation:
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                   Banner                     -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
-
-    <section id="cs-contact">
+    <div id="banner-1401">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
+            <span class="cs-int-title">Contact Us</span>
+            <div class="cs-breadcrumbs">
+                <a href="" class="cs-link">Home</a>
+                <a href="" class="cs-link cs-active">Contact</a>
             </div>
         </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/Exterior/IMG_0274.JPG">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/Exterior/IMG_0274.JPG">
+            <img decoding="async" src="/assets/images/Exterior/IMG_0274.JPG" alt="stone patio" width="1920" height="782" aria-hidden="true">
+        </picture>
+    </div>   
+
+    {% include 'components/cta.html' %}
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews-355">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">REVIEWS</span>
+                <h2 class="cs-title">Trusted by Homeowners in Syracuse, NY</h2>
+                <p class="cs-text">
+                    Our commitment to quality craftsmanship and exceptional service has earned us the trust and satisfaction of homeowners throughout Syracuse, NY. Read what our clients have to say about their experience with Stein Design and Build and see why we're the preferred choice for home improvement.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                    <span class="cs-trait">Quality</span>
+                    <p class="cs-review">
+                        Andrew and his crew were professional, talented and had an amazing attention to detail. That's exactly what I would expect from a crew of Veterans. I highly recommend Stein Design and Build for all paver hardscaping and I will definitely be using them again in the future.
+                    </p>
+                    <span class="cs-name">- Todd</span>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                    <span class="cs-trait">Professionalism</span>
+                    <p class="cs-review">
+                        Andrew and his team did a fantastic job of getting rid of my very old and unsightly pool concrete and updating it. The price was reasonable, the timing was great and the team was meticulous in making sure the job was done right! Highly recommend and have already sent friends along as well! It's like I have a brand new pool for a fraction of the cost!!!
+                    </p>
+                    <span class="cs-name">- Colleen</span>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                    <span class="cs-trait">Responsiveness</span>
+                    <p class="cs-review">
+                        Andrew has a vision that is both unique and beautiful. His work is some of the best we've seen and we are so proud of our beautiful patios, sidewalk and front wall. Andrew is professional in his communication and his work ethic exceeds expectations.
+                    </p>
+                    <span class="cs-name">- Judy</span>
+                </li>
+            </ul>
+            <a href="contact/" class="cs-button-4">GET AN ESTIMATE</a>
+        </div>
     </section>
+
 {% endblock %}
