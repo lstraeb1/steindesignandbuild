@@ -1208,7 +1208,7 @@
   }
   #contact-1151 .cs-submit {
     width: 100%;
-    min-width: 17.6875rem;
+    max-width: 17.6875rem;
   }
   #contact-1151 .cs-submit:hover {
     cursor: pointer;

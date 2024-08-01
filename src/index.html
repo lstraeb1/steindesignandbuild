@@ -14,8 +14,6 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="preload" media="(max-width: 600px)" as="image" href="/assets/images/logo-large-m.webp">
-    <link rel="preload" media="(min-width: 601px)" as="image" href="/assets/images/logo-large.png">
     <link rel="preload" media="(max-width: 600px)" as="image" href="/assets/images/Exterior/Miller-Project-1-m.webp">
     <link rel="preload" media="(min-width: 601px)" as="image" href="/assets/images/Exterior/Miller-Project-1.jpg">
 {% endblock %}
@@ -32,9 +30,9 @@ eleventyNavigation:
                 <span class="cs-topper">Welcome To</span>
                 <!--Logo-->
                 <picture class="cs-logo">
-                    <source media="(max-width: 600px)" srcset="/assets/images/logo-large-m.webp">
-                    <source media="(min-width: 601px)" srcset="/assets/images/logo-large.png">
-                    <img decoding="async" src="/assets/images/logo-large.png" alt="Stein Design And Build" width="1228" height="578">
+                    <source media="(max-width: 600px)" srcset="/assets/svgs/logo-large.svg">
+                    <source media="(min-width: 601px)" srcset="/assets/svgs/logo-large.svg">
+                    <img decoding="async" src="/assets/svgs/logo-large.svg" alt="Stein Design And Build" width="614" height="166">
                 </picture>
                 <p class="cs-text">
                     Transform your home with expert craftsmanship from Stein Design and Build in Syracuse, NY.
@@ -505,7 +503,7 @@ eleventyNavigation:
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                    <img class="cs-quote" aria-hidden="true" src="/assets/svgs/quotation.svg" decoding="async" alt="quote icon" width="40" height="33">
                     <span class="cs-trait">Quality</span>
                     <p class="cs-review">
                         Andrew and his crew were professional, talented and had an amazing attention to detail. That's exactly what I would expect from a crew of Veterans. I highly recommend Stein Design and Build for all paver hardscaping and I will definitely be using them again in the future.
@@ -513,7 +511,7 @@ eleventyNavigation:
                     <span class="cs-name">- Todd</span>
                 </li>
                 <li class="cs-item">
-                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                    <img class="cs-quote" aria-hidden="true" src="/assets/svgs/quotation.svg" decoding="async" alt="quote icon" width="40" height="33">
                     <span class="cs-trait">Professionalism</span>
                     <p class="cs-review">
                         Andrew and his team did a fantastic job of getting rid of my very old and unsightly pool concrete and updating it. The price was reasonable, the timing was great and the team was meticulous in making sure the job was done right! Highly recommend and have already sent friends along as well! It's like I have a brand new pool for a fraction of the cost!!!
@@ -521,7 +519,7 @@ eleventyNavigation:
                     <span class="cs-name">- Colleen</span>
                 </li>
                 <li class="cs-item">
-                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                    <img class="cs-quote" aria-hidden="true" src="/assets/svgs/quotation.svg" decoding="async" alt="quote icon" width="40" height="33">
                     <span class="cs-trait">Responsiveness</span>
                     <p class="cs-review">
                         Andrew has a vision that is both unique and beautiful. His work is some of the best we've seen and we are so proud of our beautiful patios, sidewalk and front wall. Andrew is professional in his communication and his work ethic exceeds expectations.

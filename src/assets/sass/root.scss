@@ -1420,7 +1420,7 @@
 
         .cs-submit {
             width: 100%;
-            min-width: calc(283 / 16 * 1rem);
+            max-width: calc(283 / 16 * 1rem);
             &:hover {
                 cursor: pointer;
             }
