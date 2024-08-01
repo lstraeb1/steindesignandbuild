@@ -447,7 +447,7 @@
     transition: bottom 0.3s, opacity 0.3s;
   }
   #cs-navigation .cs-ul-wrapper {
-    min-width: 40vw;
+    max-width: 70vw;
     height: 100vh;
     background-color: #353535;
     box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
