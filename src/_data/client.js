@@ -13,5 +13,5 @@ module.exports = {
         "facebook": "https://www.facebook.com/HardscapeAndy/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://www.steindesignandbuild.com"
 };
