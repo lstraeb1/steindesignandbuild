@@ -534,4 +534,14 @@ eleventyNavigation:
     </section>                     
 
     {% include 'components/cta.html' %}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6JBPX70JC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-V6JBPX70JC');
+    </script>
 {% endblock %}
