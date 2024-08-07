@@ -102,19 +102,19 @@
             left: 0;
             z-index: -1;
 
-            &:before {
-                /* background color overlay */
-                content: "";
-                position: absolute;
-                display: block;
-                height: 100%;
-                width: 100%;
-                background: #000;
-                opacity: 0.8;
-                top: 0;
-                left: 0;
-                z-index: 1;
-            }
+            // &:before {
+            //     /* background color overlay */
+            //     content: "";
+            //     position: absolute;
+            //     display: block;
+            //     height: 100%;
+            //     width: 100%;
+            //     background: #000;
+            //     opacity: 0.8;
+            //     top: 0;
+            //     left: 0;
+            //     z-index: 1;
+            // }
 
             img {
                 position: absolute;

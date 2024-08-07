@@ -29,6 +29,7 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-large.svg">
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/rokkitt-v36-latin-regular.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-v26-latin-regular.woff2" crossorigin>
 
@@ -55,6 +56,16 @@
             {% block body %}{% endblock %}
         </main>
         {% include "components/footer.html" %}
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6JBPX70JC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-V6JBPX70JC');
+        </script>
 
     </body>
 </html>
