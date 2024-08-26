@@ -1707,8 +1707,10 @@
             display: flex;
             align-items: center;
 
-            &:hover {
-                color: var(--primary);
+            a {
+                &:hover {
+                    color: var(--primary);
+                }
             }
         }
 
