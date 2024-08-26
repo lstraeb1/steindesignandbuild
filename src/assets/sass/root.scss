@@ -1708,6 +1708,9 @@
             align-items: center;
 
             a {
+                text-decoration: none;
+                color: #FFFFFF;
+                
                 &:hover {
                     color: var(--primary);
                 }
