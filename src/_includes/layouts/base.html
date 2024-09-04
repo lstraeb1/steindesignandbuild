@@ -46,6 +46,16 @@
 
         <title>{{ title }}</title>
 
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6JBPX70JC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-V6JBPX70JC');
+        </script>
+
     </head>
     <body>
         <!--Screen reader skip main nav-->
@@ -56,16 +66,6 @@
             {% block body %}{% endblock %}
         </main>
         {% include "components/footer.html" %}
-
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6JBPX70JC"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-V6JBPX70JC');
-        </script>
 
     </body>
 </html>
